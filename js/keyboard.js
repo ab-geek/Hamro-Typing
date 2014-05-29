@@ -55,6 +55,7 @@ $(function(){
 		//alert(character);
 		//str1.concat(str2); 
 		//$write.html(write.html());
+		document.getElementById("write").style.font="bold 40px Kantipur";
 		$write.html($write.html()+character);
 		//$write.html('\u0905 Ashish');
 	});
