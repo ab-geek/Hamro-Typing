@@ -47,6 +47,15 @@ $(function(){
 			
 			shift = false;
 		}
+		
+		//display on key pressed
+		function display(e){
+		var unicode=e.keyCode? e.keyCode : e.charCode
+		alert(unicode)
+		}
+		document.onkeypress=display
+		
+		
 		//$write.html()
 		// Add the character
 		//$write.html($write.html() + character);
