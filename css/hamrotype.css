@@ -9,8 +9,83 @@ html, body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #ccc;
-}
+  /*background-color: #ccc;  */
+    overflow: hidden;
+                background-image: linear-gradient(bottom, #14C3F4 21%, #FCFCFC 90%);
+            background-image: -o-linear-gradient(bottom, #14C3F4 21%, #FCFCFC 90%);
+            background-image: -moz-linear-gradient(bottom, #14C3F4 21%, #FCFCFC 90%);
+            background-image: -webkit-linear-gradient(bottom, #14C3F4 21%, #FCFCFC 90%);
+            background-image: -ms-linear-gradient(bottom, #14C3F4 21%, #FCFCFC 90%);
+
+            background-image: -webkit-gradient(
+              linear,
+              left bottom,
+              left top,
+              color-stop(0.21, #14C3F4),
+              color-stop(0.9, #FCFCFC));
+              
+              
+ }
+             #clouds{
+                padding: 100px 0;
+            /*  background: #c9dbe9;
+                background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+                background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+                background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+            }
+
+            /*Time to finalise the cloud shape*/
+            .cloud {
+                width: 60px; height: 60px;
+                background: #fff;
+
+                border-radius: 500px;
+                -moz-border-radius: 200px;
+                -webkit-border-radius: 200px;
+
+               
+            }
+
+
+
+            /*Time to animate*/
+            .x1 {
+                -webkit-animation: moveclouds 15s linear infinite;
+                -moz-animation: moveclouds 15s linear infinite;
+                -o-animation: moveclouds 15s linear infinite;
+            }
+
+            /*variable speed, opacity, and position of clouds for realistic effect*/
+            .x2 {
+                left: 200px;
+
+                -webkit-transform: scale(0.6);
+                -moz-transform: scale(0.6);
+                transform: scale(0.6);
+                opacity: 0.6; /*opacity proportional to the size*/
+
+                /*Speed will also be proportional to the size and opacity*/
+                /*More the speed. Less the time in 's' = seconds*/
+                -webkit-animation: moveclouds 25s linear infinite;
+                -moz-animation: moveclouds 25s linear infinite;
+                -o-animation: moveclouds 25s linear infinite;
+            }
+
+
+            @-webkit-keyframes moveclouds {
+                0% {margin-bottom: 1000px;}
+                100% {margin-bottom: -1000px;}
+            }
+            @-moz-keyframes moveclouds {
+                0% {margin-bottom: 1000px;}
+                100% {margin-bottom: -1000px;}
+            }
+            @-o-keyframes moveclouds {
+                0% {margin-bottom: 1000px;}
+                100% {margin-bottom: -1000px;}
+            }
+
+
 
 #wrapper, #footer {
   width: 740px;

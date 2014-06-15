@@ -496,8 +496,25 @@ var gLessons = (function(window, document, undefined) {
     // clear the level selector
     ui.level.innerHTML = '<option> (loading...) </option>';
 
+	
+	//check for nepali
+	if(name=='nepali') 
+	{
+	document.getElementById("keyboard").style.font="bold 30px Nepali";
+    document.getElementById("txtPrompt").style.font="bold 30px Kantipur";
+    document.getElementById("txtInput").style.font="bold 30px Kantipur";
+   // document.write(name);
+	}
+	else
+	{    
+    document.getElementById("keyboard").style.font="";
+    document.getElementById("txtPrompt").style.font="";
+    document.getElementById("txtInput").style.font="";
+	}
     // load the layout file
     var href = 'lessons/' + name + '.ktouch.xml';
+
+    
     XHR.loadXML(href, function(xmldoc) {
       lessonsDoc = xmldoc;
       var levelNodes = xmldoc.getElementsByTagName('Level');
