@@ -67,6 +67,8 @@ body {
   background-image: url(images/register.png);
 }
 
+
+
 * html #github { /* IE6 */
   background-image: url(images/forkme.gif);
 }

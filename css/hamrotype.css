@@ -98,7 +98,7 @@ html, body {
   padding: 0 20px;
   border-left: 1px solid #aaa;
   border-right: 1px solid #aaa;
-  background-color: white;
+  background-color: lightblue;
    -webkit-box-shadow: 0px 1px 10px #888;
       -moz-box-shadow: 0px 1px 10px #888;
        -ms-box-shadow: 0px 1px 10px #888;
@@ -112,7 +112,7 @@ html, body {
 
 #content {
   padding-bottom: 40px; /* >= height of the footer */
-  background-color: white;
+  background-color: lightblue;
 }
 
 #footer {
@@ -159,7 +159,7 @@ html, body {
 
 .hints li.active,
 .hints ul#keyboard li.specialKey.active {
-  background-color: brown;
+  background-color: red ;
 }
 
 .hints li.active * {
@@ -167,11 +167,11 @@ html, body {
   color: white;
 }
 
-.hints .left2  { background-color: #db0; }
-.hints .right2 { background-color: #ee0; }
-.hints .left3, .hints .right3 { background-color: #ac0; }
-.hints .left4, .hints .right4 { background-color: #3bb; }
-.hints .left5, .hints .right5 { background-color: #88f; }
+.hints .left2  { background-color: gray; }
+.hints .right2 { background-color: khaki; }
+.hints .left3, .hints .right3 { background-color: plum; }
+.hints .left4, .hints .right4 { background-color: lightsteelblue; }
+.hints .left5, .hints .right5 { background-color: limegreen; }
 
 .hints li#ac01, .hints li#ac02, .hints li#ac03,
 .hints li#ac08, .hints li#ac09, .hints li#ac10,
@@ -187,9 +187,9 @@ html, body {
  */
 
 #hands {
-  float: right;
+  float: left;
   position: relative;
-  margin-top: 5px;
+  margin-top: 15px;
   width: 150px;
   height: 90px;
   overflow: hidden;

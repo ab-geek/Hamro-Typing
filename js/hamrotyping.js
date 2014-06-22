@@ -500,7 +500,7 @@ var gLessons = (function(window, document, undefined) {
 	//check for nepali
 	if(name=='nepali') 
 	{
-	document.getElementById("keyboard").style.font="bold 30px Nepali";
+	document.getElementById("keyboard").style.font="";
     document.getElementById("txtPrompt").style.font="bold 30px Kantipur";
     document.getElementById("txtInput").style.font="bold 30px Kantipur";
    // document.write(name);
